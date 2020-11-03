@@ -1,5 +1,6 @@
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import io.restassured.RestAssured;
 
 import java.util.Collections;
 import java.util.Map;

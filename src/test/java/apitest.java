@@ -1,11 +1,10 @@
-import io.restassured.RestAssured;
-import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-
 public class apitest {
     @Test
     void Test_01() {

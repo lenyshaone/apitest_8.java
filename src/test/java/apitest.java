@@ -1,12 +1,14 @@
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import io.restassured.RestAssured;
+import jdk.jfr.Description;
 
 import java.util.Collections;
 import java.util.Map;
 import java.util.stream.Collectors;
 public class apitest {
     @Test
+    @Description(value = "Тест проверяет, что больше всего фактов написал Kasimir Schulz")
     void Test_01() {
        String expected_user = "Kasimir Schulz";
         Object actual_user;

@@ -25,12 +25,13 @@
                 <version>${maven-surefire-plugin.version}</version>
                 <configuration>
                     <argLine>-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"</argLine>
-                   <systemProperties>
-                           <property>
+                  <systemProperties>
+                        <allure.results.directory>target/allure-results</allure.results.directory>
+                        <property>
                             <name>allure.results.directory</name>
-                          <value>C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\allure\allure-results</value>
-                            </property>
-                  </systemProperties>
+                            <value>${project.build.directory}/allure-results</value>
+                        </property>
+                    </systemProperties>
                 </configuration>
                 <dependencies>
                     <dependency>
